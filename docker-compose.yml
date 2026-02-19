@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  zensical:
+    image: zensical/zensical:latest
+    container_name: zensical_docs
+    # La commande pour lancer le serveur et le rendre accessible
+    command: serve --dev-addr=0.0.0.0:8000
+    volumes:
+      # On lie le dossier courant (.) au dossier /docs du conteneur
+      - ./:/docs
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
