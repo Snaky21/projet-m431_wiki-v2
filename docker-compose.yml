@@ -1,5 +1,3 @@
-version: "3.3"
-
 services:
   zensical:
     image: zensical/zensical:latest
