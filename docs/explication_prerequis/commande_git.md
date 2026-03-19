@@ -1,6 +1,6 @@
-## 🚀 Commandes Essentielles Git
+# 🚀 Commandes Essentielles Git
 
-### ♻️ Récupérer et Mettre à jour
+## ♻️ Récupérer et Mettre à jour
 
 - **Cloner un dépôt distant :**
 
@@ -23,7 +23,7 @@ git pull origin <la_branche>
 
 ---
 
-### ➕ Ajouter et Envoyer du code
+## ➕ Ajouter et Envoyer du code
 
 - **Le cycle de sauvegarde classique :**
     
@@ -47,7 +47,7 @@ git pull origin <la_branche>
 
 ---
 
-### ☑️ Vérifier l'état de son dépôt
+## ☑️ Vérifier l'état de son dépôt
 
 - **Gérer ses branches :**
     
@@ -66,7 +66,7 @@ git pull origin <la_branche>
 
 ---
 
-### 🧹 Nettoyer les fichiers non suivis
+## 🧹 Nettoyer les fichiers non suivis
 
 - **Faire du tri en toute sécurité :**
     

@@ -52,7 +52,3 @@ graph TD
     style D fill:#74b9ff
 
 ```
-
----
-
-### **Retour en arrière ->** [Homepage](https://github.com/Snaky21/projet-m431.git)

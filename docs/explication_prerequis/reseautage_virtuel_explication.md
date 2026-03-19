@@ -56,7 +56,3 @@ graph LR
     C -->|Outil| E[Container B]
 
 ```
-
----
-
-### **Retour en arrière ->** [Homepage](https://github.com/Snaky21/projet-m431.git)
