@@ -1,166 +1,120 @@
+# 📅 Planification du Projet : Diagramme de Gantt
+
+Ce document présente la planification du projet m431 sous forme de diagramme de Gantt. Il détaille les phases, les tâches, les responsabilités et les dépendances entre les étapes.
+
 ---
-icon: lucide/rocket
+
+## Étape 1 : Les phases du projet 🗂️
+
+Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeudis matin, mars → juin 2026). Trois jalons marquent les échéances imposées par le module.
+
+### Phase 1 — Planification (S1 → S4)
+
+| Tâche | Responsable | Début | Fin |
+|-------|-------------|-------|-----|
+| Mise en place sur papier | — | 12 mars | 12 mars |
+| Attribution des rôles | Gabriel | 12 mars | 12 mars |
+| Kanban | Jonathan | 12 mars | 19 mars |
+| Eisenhower | Rafael | 19 mars | 26 mars |
+| Gantt prévisionnel | Rafael | 26 mars | 2 avril |
+| Documentation | Kevin | 26 mars | 21 mai |
+| Pert *(optionnel)* | — | 26 mars | 2 avril |
+
+### Phase 2 — Apprentissage (S1 → S4)
+
+> L'apprentissage est un **bloc parent** : les sous-tâches techniques ne peuvent démarrer qu'une fois les outils maîtrisés (après fin S4).
+
+| Tâche | Responsable | Début | Fin |
+|-------|-------------|-------|-----|
+| **Apprentissage** *(parent)* | Tous | 12 mars | 2 avril |
+| → Git + VS Code | Tous | 12 mars | 12 mars |
+| → GitHub | Tous | 19 mars | 26 mars |
+| → GitHub Pages + Wiki | Kevin | 23 avril | 30 avril |
+| → Docker + Traefik | Gabriel | 23 avril | 7 mai |
+
+### ◆ Jalon 1 — Analyse et planification · 2 avril
+
+
 ---
 
-# Get started
+### Phase 3 — Réalisation (S5 → S7)
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+| Tâche | Responsable | Début | Fin |
+|-------|-------------|-------|-----|
+| Avancé documentation | Kevin | 23 avril | 7 mai |
 
-## Commands
+### ◆ Jalon 2 — Suivi et adaptation · 21 mai
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+---
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+### Phase 4 — Clôture (S10 → S12)
 
-## Examples
+| Tâche | Responsable | Début | Fin |
+|-------|-------------|-------|-----|
+| Finaliser la doc | Kevin | 4 juin | 11 juin |
+| Gantt final | Rafael / Jonathan | 4 juin | 11 juin |
+| Présentation | Tous | 18 juin | 18 juin |
 
-### Admonitions
+### ◆ Jalon 3 — Clôture · 18 juin
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+---
+## Étape 2 : Les dépendances entre tâches 🔗
 
-!!! note
+Chaque flèche indique qu'une tâche **doit être terminée avant** que la suivante puisse commencer.
+Certaines tâches démarrent **en parallèle** dès qu'une tâche commune est lancée.
 
-    This is a **note** admonition. Use it to provide helpful information.
+```mermaid
+flowchart TD
+    A[Mise en place sur papier] --> B[Attribution des rôles]
+    A --> APP[Apprentissage
+    S1 à S4]
 
-!!! warning
+    B --> C[Kanban]
+    C --> D[Eisenhower]
+    D --> E[Gantt prévisionnel]
+    D --> F[Documentation
+    S3 à S8]
 
-    This is a **warning** admonition. Be careful!
+    APP --> G[Git + VS Code]
+    G --> H[GitHub]
 
-### Details
+    E --> J1
+    H --> J1
+    F --> J1
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+    J1([◆ Jalon 1
+    2 avril]) --> I[GitHub Pages + Wiki]
+    J1 --> L[Avancé documentation]
+    I --> K[Docker + Traefik]
 
-??? info "Click to expand for more info"
-    
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+    K --> J2
+    L --> J2
 
-## Code Blocks
+    J2([◆ Jalon 2
+    21 mai]) --> M[Finaliser la doc]
+    M --> N[Gantt final]
+    M --> O[Présentation]
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+    N --> J3
+    O --> J3
 
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!") # (1)!
+    J3([◆ Jalon 3
+    18 juin])
 
-greet("Python")
+    style J1 fill:#ffc9c9,stroke:#e03131,color:#a00000
+    style J2 fill:#ffc9c9,stroke:#e03131,color:#a00000
+    style J3 fill:#ffc9c9,stroke:#e03131,color:#a00000
+    style APP fill:#f5f5f5,stroke:#888,stroke-dasharray:5 5
 ```
 
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+---
 
-    Code annotations allow to attach notes to lines of code.
+## Étape 3 : Les responsabilités 👥
 
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
-
-## Content tabs
-
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
-
-=== "Python"
-
-    ``` python
-    print("Hello from Python!")
-    ```
-
-=== "Rust"
-
-    ``` rs
-    println!("Hello from Rust!");
-    ```
-
-## Diagrams
-
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
-
-## Footnotes
-
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
-
-Here's a sentence with a footnote.[^1]
-
-Hover it, to see a tooltip.
-
-[^1]: This is the footnote.
-
-
-## Formatting
-
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
-
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## Icons, Emojis
-
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## Maths
-
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
-
-<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-</script>
-
-## Task Lists
-
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+| Membre | Rôle | Tâches principales |
+|--------|------|--------------------|
+| Gabriel | Chef de projet | Gestion d'équipe, avancée du projet, Wiki |
+| Jonathan | Planification | Kanban, Gantt final |
+| Rafael | Diagrammes | Eisenhower, Gantt prévisionnel, Gantt final |
+| Kevin | Documentation | Documentation, GitHub Pages, Wiki |
+| Tous | — | Apprentissage, Git + VS Code, GitHub, Présentation |
