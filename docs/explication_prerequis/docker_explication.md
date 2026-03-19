@@ -77,5 +77,3 @@ graph LR
     A -- docker compose restart --> A
 
 ```
----
-### **Retour en arrière ->** [Homepage](https://github.com/Snaky21/projet-m431.git)

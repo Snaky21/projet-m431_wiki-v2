@@ -68,7 +68,3 @@ graph LR
     E --> G(Item 2)
 
 ```
-
----
-
-### **Retour en arrière ->** [Homepage](https://github.com/Snaky21/projet-m431.git)
