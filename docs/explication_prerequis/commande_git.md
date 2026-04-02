@@ -49,6 +49,20 @@ git pull origin <la_branche>
 
 ## ☑️ Vérifier l'état de son dépôt
 
+- **Créer une nouvelle branche :**
+    
+    ```bash
+    # Créer une nouvelle branche
+    git branch -b <nom_de_la_branche>
+    ```
+
+- **Se déplacer entre les branches :**
+    
+    ```bash
+    # Se déplacer entre les branches
+    git checkout <nom_de_la_branche>
+    ```
+
 - **Gérer ses branches :**
     
     ```bash
