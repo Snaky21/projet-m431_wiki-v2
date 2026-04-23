@@ -1,8 +1,10 @@
 # 📚 Wiki M431 - Projet de Gestion de Projet
 
-![Zensical](https://img.shields.io/badge/Powered%20by-Zensical-blueviolet?style=for-the-badge)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-[![Code Source](https://img.shields.io/badge/Code_Source-GitHub-green?style=for-the-badge&logo=github)](https://github.com/Snaky21/projet_m431_code)
+<p align="center">
+  <img src="https://img.shields.io/badge/Powered%20by-Zensical-blueviolet?style=for-the-badge" alt="Zensical">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Code_Source-GitHub-green?style=for-the-badge&logo=github" alt="Code Source">
+</p>
 
 Ce dépôt sert de documentation centralisée regroupant à la fois le suivi organisationnel du projet et les guides techniques approfondis de l'infrastructure.
 
