@@ -8,6 +8,8 @@
 
 Ce dépôt sert de documentation centralisée regroupant à la fois le suivi organisationnel du projet et les guides techniques approfondis de l'infrastructure.
 
+🔗 **Lien important :** Vous pouvez trouver le code source du projet sur [projet_m431_code](https://github.com/Snaky21/projet_m431_code).
+
 ---
 
 ## 👥 L'Équipe & Rôles
