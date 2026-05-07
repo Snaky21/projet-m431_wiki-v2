@@ -8,7 +8,7 @@ Ce document présente la planification du projet m431 sous forme de diagramme de
 
 Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeudis matin, mars → juin 2026). Trois jalons marquent les échéances imposées par le module.
 
-### Phase 1 — Planification (S1 → S4)
+### Phase 1 — Planification (S1 → S7)
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
@@ -19,7 +19,7 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 | Gantt prévisionnel | Rafael | 26 mars | 2 avril |
 | Documentation | Kevin | 26 mars | 7 mai |
 
-### Phase 2 — Apprentissage (S1 → S4)
+### Phase 2 — Apprentissage (S1 → S7)
 
 > L'apprentissage est un **bloc parent** : les sous-tâches techniques ne peuvent démarrer qu'une fois les outils maîtrisés (après fin S4).
 
@@ -36,7 +36,7 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 
 ---
 
-### Phase 3 — Réalisation (S5 → S7)
+### Phase 3 — Réalisation (S5 → S6)
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
@@ -46,7 +46,7 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 
 ---
 
-### Phase 4 — Clôture (S10 → S12)
+### Phase 4 — Clôture (S6 → S11)
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
@@ -66,13 +66,13 @@ Certaines tâches démarrent **en parallèle** dès qu'une tâche commune est la
 flowchart TD
     A[Mise en place sur papier] --> B[Attribution des rôles]
     A --> APP[Apprentissage
-    S1 à S4]
+    S1 à S7]
 
     B --> C[Kanban]
     C --> D[Eisenhower]
     D --> E[Gantt prévisionnel]
     D --> F[Documentation
-    S3 à S8]
+    S3 à S7]
 
     APP --> G[Git + VS Code]
     G --> H[GitHub]
