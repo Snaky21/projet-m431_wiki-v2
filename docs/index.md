@@ -14,11 +14,10 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 |-------|-------------|-------|-----|
 | Mise en place sur papier | — | 12 mars | 12 mars |
 | Attribution des rôles | Gabriel | 12 mars | 12 mars |
-| Kanban | Jonathan | 12 mars | 19 mars |
-| Eisenhower | Rafael | 19 mars | 26 mars |
+| Kanban | Jonathan | 12 mars | 2 avril |
+| Eisenhower | Rafael | 26 mars | 2 avril |
 | Gantt prévisionnel | Rafael | 26 mars | 2 avril |
-| Documentation | Kevin | 26 mars | 21 mai |
-| Pert *(optionnel)* | — | 26 mars | 2 avril |
+| Documentation | Kevin | 26 mars | 7 mai |
 
 ### Phase 2 — Apprentissage (S1 → S4)
 
@@ -26,7 +25,7 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
-| **Apprentissage** *(parent)* | Tous | 12 mars | 2 avril |
+| **Apprentissage** *(parent)* | Tous | 12 mars | 7 mai |
 | → Git + VS Code | Tous | 12 mars | 12 mars |
 | → GitHub | Tous | 19 mars | 26 mars |
 | → GitHub Pages + Wiki | Kevin | 23 avril | 30 avril |
@@ -41,7 +40,7 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
-| Avancé documentation | Kevin | 23 avril | 7 mai |
+| Avancé documentation | Kevin | 23 avril | 30 avril |
 
 ### ◆ Jalon 2 — Suivi et adaptation · 21 mai
 
@@ -51,9 +50,9 @@ Le projet est divisé en **4 phases** qui se déroulent sur **12 séances** (jeu
 
 | Tâche | Responsable | Début | Fin |
 |-------|-------------|-------|-----|
-| Finaliser la doc | Kevin | 4 juin | 11 juin |
-| Gantt final | Rafael / Jonathan | 4 juin | 11 juin |
-| Présentation | Tous | 18 juin | 18 juin |
+| Finaliser la doc | Kevin | 7 mai | 7 mai |
+| Gantt final | Rafael / Jonathan | 30 avril | 7 mai |
+| Présentation | Tous | 28 mai | 11 juin |
 
 ### ◆ Jalon 3 — Clôture · 18 juin
 
